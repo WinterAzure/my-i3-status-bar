@@ -1,0 +1,40 @@
+[
+    [
+        {
+            "full_text": "|Load 0.25",
+            "color": "#FFFFFF"
+        },
+        {
+            "full_text": "|Root:463.904GiB|Data:413.93GiB",
+            "color": "#FFFFFF"
+        },
+        {
+            "full_text": "|BAT69 %",
+            "color": "#FFFFFF"
+        },
+        {
+            "full_text": "|35.85 ℃",
+            "color": "#FFD700",
+            "background": "#FFF000"
+        }
+    ],
+    [
+        {
+            "full_text": "|Load 0.23",
+            "color": "#FFFFFF"
+        },
+        {
+            "full_text": "|Root:463.904GiB|Data:413.93GiB",
+            "color": "#FFFFFF"
+        },
+        {
+            "full_text": "|BAT69 %",
+            "color": "#FFFFFF"
+        },
+        {
+            "full_text": "|35.85 ℃",
+            "color": "#FFD700",
+            "background": "#FFF000"
+        }
+    ]
+]
