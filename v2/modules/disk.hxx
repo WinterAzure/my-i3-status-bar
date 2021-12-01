@@ -18,7 +18,7 @@ const g_data_st *module_disk(void){
         g_data.full_text<<i.second
                         <<":"
                         <<free_space
-                        <<"GiB ";
+                        <<" GiB ";
         strcpy(g_data.text_color,COL_WHITE);
     }
     return &g_data;

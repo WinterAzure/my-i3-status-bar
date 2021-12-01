@@ -12,6 +12,7 @@ using namespace std;
 
 const g_data_st *module_network(void){
     /* print network status. */
+    /* no need to update too fast */
     static struct ifaddrs *ifaddr;
     int net_family, s, addrlen;
 

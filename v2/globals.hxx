@@ -14,6 +14,7 @@
 #include <cstring>
 
 #include <unistd.h>
+#include <sys/sysinfo.h>
 
 #define COL_BLACK   "#000000"
 #define COL_WHITE   "#FFFFFF"
@@ -59,6 +60,9 @@ const std::string proc_file="/sys/class/power_supply/BAT0/";
 
 /* CPU temp in /proc */
 #define TEMP_F "/sys/class/hwmon/hwmon1/temp1_input"
+
+/* Uptime file */
+#define UPTIME_FILE "/proc/uptime"
 
 inline void clean_g_data(){
     g_data.full_text.str("");

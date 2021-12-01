@@ -1,3 +1,2 @@
 Problems:
-    1. VERY slow when start
-    2. Network module is slow as well...
+    2. Network module is slow,use better way or async it.

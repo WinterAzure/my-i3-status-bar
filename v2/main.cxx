@@ -22,10 +22,12 @@ int main(int argc,char *argv[]){
     g_data.bg_color=(char *)malloc(64);
     g_data.text_color=(char *)malloc(64);
 
+    cout.setf(ios::unitbuf);    /* IMPORTANT */
     cout<<"{\"version\":1}\n[\n";
+    cout<<"[]\n";
     while (1){
         output.str("");
-        output<<"[";
+        output<<",[";
         for (auto &m:modules){
             if (m()==NULL){
                 cerr<<"Error in main loop."<<endl;
@@ -34,7 +36,7 @@ int main(int argc,char *argv[]){
             output<<fmt(&g_data);
         }
         output<<"]";
-        cout<<output.str().substr(0,output.str().length()-2)<<"],\n";
+        cout<<output.str().substr(0,output.str().length()-2)<<"]\n";
         sleep(3);
     }
 }

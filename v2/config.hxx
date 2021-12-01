@@ -9,6 +9,7 @@
 #include "modules/battery.hxx"
 #include "modules/temp.hxx"
 #include "modules/load.hxx"
+#include "modules/uptime.hxx"
 #include "modules/counter.hxx"
 
 list<MODULE> modules{
@@ -17,5 +18,6 @@ list<MODULE> modules{
     module_disk,
     module_battery,
     module_temperature,
-    module_simple_counter,
+    module_uptime,
+    module_counter,
 };
