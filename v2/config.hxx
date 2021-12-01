@@ -10,7 +10,7 @@
 #include "modules/temp.hxx"
 #include "modules/load.hxx"
 #include "modules/uptime.hxx"
-#include "modules/counter.hxx"
+#include "modules/info.hxx"
 
 list<MODULE> modules{
     module_network,
@@ -19,5 +19,5 @@ list<MODULE> modules{
     module_battery,
     module_temperature,
     module_uptime,
-    module_counter,
+    module_info,
 };

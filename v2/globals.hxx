@@ -36,6 +36,12 @@ struct g_data_st{
 
 extern g_data_st g_data;
 
+/* bar pid */
+const pid_t bar_pid=getpid();
+
+/* save sysinfo */
+struct sysinfo info;
+
 /* output text */
 stringstream output;
 

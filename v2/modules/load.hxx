@@ -6,6 +6,10 @@ const g_data_st *module_load(void){
     static double loadavg;
 
     clean_g_data();
+    if (sysinfo(&info)!=0){
+        ON_ERROR_SET_MARKUP("Error:uptime:getsysinfo");
+        return &g_data;
+    }
     if (getloadavg(&loadavg,1)==-1){
         ON_ERROR_SET_MARKUP("Error:module load");
         return &g_data;
@@ -18,6 +22,7 @@ const g_data_st *module_load(void){
         strcpy(g_data.text_color,COL_GOLE);
         strcpy(g_data.bg_color,COL_RED);
     }
-    g_data.full_text<<"Load "<<loadavg;
+    g_data.full_text<<"Load:"<<loadavg;
+    g_data.full_text<<" Process:"<<info.procs;
     return &g_data;
 }
