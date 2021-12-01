@@ -1,2 +1,31 @@
-Problems:
-    2. Network module is slow,use better way or async it.
+## My-i3-bar
+
+a simple bar to show system information
+
+---
+
+look like this:
+
+![demo.png](demo.png)
+
+### Config
+
+You can edit `v2/config.hxx` to enable/disable modules.
+
+all modules use the same struct `g_data_`(in v2/globals.hxx). If you want to add new modules,just take a look at other modules. All modules are very simple.
+
+**Notice**:You should modify `globals.hxx` to specify ` filesystem_monitor` and `PROC_FILE` because every computer have different value.
+
+### Compile
+
+just 
+
+``` bash
+g++ v2/main.cxx -o bar
+```
+
+No third-part libraries.
+
+### What is `v1`
+
+I don't know i3status's json format so `v1` is just plain text with ANSI escapes,and it displays badly.
