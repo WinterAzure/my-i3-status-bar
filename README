@@ -18,13 +18,19 @@ all modules use the same struct `g_data_`(in v2/globals.hxx). If you want to add
 
 ### Compile
 
-just 
+You must have `libusb1.0-dev` to compile the usb counter module. If you use openSUSE, try
 
-``` bash
-g++ v2/main.cxx -o bar
+```shell
+sudo zypper install libusb-1_0-devel
 ```
 
-No third-part libraries.
+After install, use g++ or clang++ to compile, do not forget to add `-lusb-1.0`
+
+```shell
+g++ ./v2/main.cxx -lusb-1.0 -o bar
+```
+
+If you do not want this, edit the config and delete usb module
 
 ### What is `v1`
 
