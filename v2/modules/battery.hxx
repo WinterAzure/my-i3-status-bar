@@ -27,7 +27,7 @@ const g_data_st *module_battery(void){
     percentage=stoi(temp_buff)/(BATTERY_MAX_ENERGY/100);
     g_data.full_text<<to_string(percentage)<<" %";
     if (percentage<=30){
-        strcpy(g_data.text_color,COL_GOLE);
+        strcpy(g_data.text_color,COL_BLACK);
         strcpy(g_data.bg_color,COL_RED);
     }
     else if (percentage>30 && percentage<=60)

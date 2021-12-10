@@ -11,6 +11,7 @@
 #include "modules/load.hxx"
 #include "modules/uptime.hxx"
 #include "modules/info.hxx"
+#include "modules/usb.hxx"
 
 list<MODULE> modules{
     module_network,
@@ -18,6 +19,7 @@ list<MODULE> modules{
     module_disk,
     module_battery,
     module_temperature,
+    module_usb_count,
     module_uptime,
     module_info,
 };

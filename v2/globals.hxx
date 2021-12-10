@@ -70,6 +70,9 @@ const std::string proc_file="/sys/class/power_supply/BAT0/";
 /* Uptime file */
 #define UPTIME_FILE "/proc/uptime"
 
+/* default usb slots */
+#define DEFAULT_USB_DEVICES 8
+
 inline void clean_g_data(){
     g_data.full_text.str("");
     strcpy(g_data.bg_color,"");
